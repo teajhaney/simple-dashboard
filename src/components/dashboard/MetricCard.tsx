@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from '@/components/ui/collapsible';
 import { Card, CardContent } from '@/components/ui/card';
 import type { MetricInfo } from '../../types/schema';
 
@@ -31,7 +35,10 @@ export function MetricCard({ metric }: MetricCardProps) {
           <CardContent className="pt-0 px-4 pb-4">
             <div className="text-text-muted body-sm">
               {/* Placeholder for expanded content */}
-              <p>Detailed metrics for {metric.title.toLowerCase()} will be displayed here.</p>
+              <p>
+                Detailed metrics for {metric.title.toLowerCase()} will be
+                displayed here.
+              </p>
             </div>
           </CardContent>
         </CollapsibleContent>
